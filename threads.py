@@ -11,10 +11,13 @@ import sys
 import json
 import rdflib
 
-from mbox2rdf import nmo, scrub, render
+from mbox2rdf import nmo, scrub
+from template import render
+
+rdf_file = sys.argv[1]
 
 g = rdflib.Graph()
-g.parse(sys.argv[1])
+g.parse(rdf_file)
 
 emails = set()
 replies = []
@@ -54,4 +57,4 @@ for a, b in replies:
 d3 = {"nodes": email_nodes, "links": links}
 json_data = json.dumps(d3, indent=2)
 
-print render("Emails", json_data)
+print render("Threads in %s" % rdf_file, json_data)
