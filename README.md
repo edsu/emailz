@@ -5,6 +5,8 @@ emailz is a utility for turning discussion list mboxes into rdf using the
 NEPOMUK Message Ontology. It includes a simple tool that reads the rdf 
 to visualize threads in an email discussion list using D3.
 
+See the examples directory for sample rdf and html files.
+
 Disclaimer
 ----------
 

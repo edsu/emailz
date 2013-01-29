@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 """
-Turns mbox files into rdf, using NEPOMUK Message Ontology.
+Turns mbox files into rdf, using NEPOMUK Message Ontology. You may want
+to extract more from the mbox. Please send a pull request if you do!
 """
 
 import os
