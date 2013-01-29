@@ -16,7 +16,7 @@ Usage
 -----
 
 1. pip install rdflib
-1. ./mbox2rdf \*.mbx > emails.rdf
+1. ./mbox2rdf.py \*.mbx > emails.rdf
 1. ./threads.py emails.rdf > threads.html
 1. open threads.html
 
